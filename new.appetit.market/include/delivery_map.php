@@ -1,0 +1,118 @@
+<!--script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fVkE2fo_O_WgmL60PI_nX_nEyhLlopMD&amp;width=100%&amp;height=550&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=map"></script-->
+
+
+<div class="map">
+	   <script type="text/javascript">
+function BX_SetPlacemarks_MAP_mF8Ev4(map)
+{
+	if(typeof window["BX_YMapAddPlacemark"] != 'function')
+	{
+		/* If component's result was cached as html,
+		 * script.js will not been loaded next time.
+		 * let's do it manualy.
+		*/
+
+		(function(d, s, id)
+		{
+			var js, bx_ym = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
+			bx_ym.parentNode.insertBefore(js, bx_ym);
+		}(document, 'script', 'bx-ya-map-js'));
+
+		var ymWaitIntervalId = setInterval( function(){
+				if(typeof window["BX_YMapAddPlacemark"] == 'function')
+				{
+					BX_SetPlacemarks_MAP_mF8Ev4(map);
+					clearInterval(ymWaitIntervalId);
+				}
+			}, 300
+		);
+
+		return;
+	}
+
+	var arObjects = {PLACEMARKS:[],POLYLINES:[]};
+	arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'30.281599545017','LAT':'59.850101511587','TEXT':'Доставка еды \"Аппетит маркет \" тел: 602-00-32'});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'},{'LAT':'59.830165163815','LON':'30.295779312961'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'3'}});
+	arObjects.POLYLINES[arObjects.POLYLINES.length] = BX_YMapAddPolyline(map, {'POINTS':[{'LAT':'59.834118543889','LON':'30.268013085239'},{'LAT':'59.826492203052','LON':'30.233552063815'},{'LAT':'59.823553541823','LON':'30.207974518649'},{'LAT':'59.82627613388','LON':'30.124632920139'},{'LAT':'59.859620564245','LON':'30.126692856662'},{'LAT':'59.870497761783','LON':'30.15553196799'},{'LAT':'59.862383365253','LON':'30.234496201389'},{'LAT':'59.880939965205','LON':'30.259043778293'},{'LAT':'59.878351295962','LON':'30.320498551242'},{'LAT':'59.884132378692','LON':'30.369593705051'},{'LAT':'59.888618493828','LON':'30.381781662814'},{'LAT':'59.865404915236','LON':'30.41525563132'},{'LAT':'59.844334661901','LON':'30.432250107639'},{'LAT':'59.829473814021','LON':'30.441863144748'},{'LAT':'59.814952141657','LON':'30.38315495383'},{'LAT':'59.814087556119','LON':'30.323760117404'},{'LAT':'59.832239126839','LON':'30.27500828635'}],'TITLE':'','STYLE':{'strokeColor':'FF00007F','strokeWidth':'12'}});
+}
+</script>
+<div class="bx-yandex-view-layout">
+	<div class="bx-yandex-view-map">
+		<script>
+			var script = document.createElement('script');
+			script.src = 'http://api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix';
+			(document.head || document.documentElement).appendChild(script);
+			script.onload = function () {
+				this.parentNode.removeChild(script);
+			};
+		</script>
+		<script type="text/javascript">
+
+if (!window.GLOBAL_arMapObjects)
+	window.GLOBAL_arMapObjects = {};
+
+function init_MAP_mF8Ev4()
+{
+	if (!window.ymaps)
+		return;
+
+	if(typeof window.GLOBAL_arMapObjects['MAP_mF8Ev4'] !== "undefined")
+		return;
+
+	var node = BX("BX_YMAP_MAP_mF8Ev4");
+	node.innerHTML = '';
+
+	var map = window.GLOBAL_arMapObjects['MAP_mF8Ev4'] = new ymaps.Map(node, {
+		center: [59.850144695649, 30.281642460363],
+		zoom: 10,
+		type: 'yandex#map'
+	});
+
+	if (map.behaviors.isEnabled("scrollZoom"))
+		map.behaviors.disable("scrollZoom");
+	map.behaviors.enable("dblClickZoom");
+	map.behaviors.enable("drag");
+	if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
+		map.behaviors.disable("rightMouseButtonMagnifier");
+	map.controls.add('zoomControl');
+	map.controls.add('typeSelector');
+	map.controls.add('scaleLine');
+	if (window.BX_SetPlacemarks_MAP_mF8Ev4)
+	{
+		window.BX_SetPlacemarks_MAP_mF8Ev4(map);
+	}
+}
+
+(function bx_ymaps_waiter(){
+	if(typeof ymaps !== 'undefined')
+		ymaps.ready(init_MAP_mF8Ev4);
+	else
+		setTimeout(bx_ymaps_waiter, 100);
+})();
+
+
+/* if map inits in hidden block (display:none)
+*  after the block showed
+*  for properly showing map this function must be called
+*/
+function BXMapYandexAfterShow(mapId)
+{
+	if(window.GLOBAL_arMapObjects[mapId] !== undefined)
+		window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+}
+
+</script>
+<div id="BX_YMAP_MAP_mF8Ev4" class="bx-yandex-map" style="height: 450px; width: 100%;"><ymaps class="ymaps-map ymaps-i-ua_js_yes" style="z-index: 0; width: 1686px; height: 450px;"><ymaps class="ymaps-glass-pane ymaps-events-pane" unselectable="on" style="z-index: 500; position: absolute; width: 1686px; height: 450px; left: 0px; top: 0px; user-select: none; transform: translate3d(0px, 0px, 0px) scale(1, 1); cursor: url(&quot;https://api-maps.yandex.ru/2.0.45/release/../images/ef50ac9e93aaebe3299791c79f277f8e.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.0.45/release/../images/ef50ac9e93aaebe3299791c79f277f8e.cur&quot;), move;"></ymaps><ymaps class="ymaps-layers-pane" style="z-index: 100; position: absolute; left: 843px; top: 225px;"><ymaps style="z-index: 150; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1);"><canvas height="706" width="1942" style="position: absolute; width: 1942px; height: 706px; left: -971px; top: -353px;"></canvas></ymaps></ymaps><ymaps class="ymaps-copyrights-pane" style="z-index: 1000; position: absolute;"><ymaps><ymaps class="ymaps-copyrights-logo"><ymaps class="ymaps-logotype-div"><a target="_blank" class="ymaps-logo-link ymaps-logo-link-ru" href="https://yandex.ru/maps/?origin=jsapi&amp;ll=30.281642,59.850145&amp;z=10&amp;l="><ymaps class="ymaps-logo-link-wrap"></ymaps></a></ymaps></ymaps><ymaps class="ymaps-copyrights-legend"><ymaps class="ymaps-copyright-legend-container"><ymaps class="ymaps-copyright-legend"><ymaps class="ymaps-copyright-legend-element ymaps-copyright-legend-element-black"><ymaps style="display: inline;">© Яндекс</ymaps></ymaps></ymaps><ymaps class="ymaps-copyright-agreement ymaps-copyright-agreement-black"><a href="https://yandex.ru/legal/maps_termsofuse/?lang=ru" target="_blank">Условия использования</a></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps style="z-index: 850; height: 0px; width: 0px; bottom: 0px; left: 0px; position: absolute;"><ymaps style="bottom: 5px; left: 5px; position: absolute;"><iframe src="https://api-maps.yandex.ru/services/inception/?lang=ru_RU&amp;iframe_id=id_1495962839018871931&amp;api_version=2.0&amp;url=%2Fmap&amp;data=%7B%22mapState%22%3A%7B%22origin%22%3A%22jsapi_2_0%22%2C%22source%22%3A%22api-maps%22%2C%22from%22%3A%22api-maps%22%2C%22host%22%3A%22appetit.market%22%7D%7D" width="114" height="29" scrolling="no" frameborder="0" style="overflow: hidden;"></iframe></ymaps></ymaps><ymaps class="ymaps-controls-pane" style="z-index: 800; position: static;"><ymaps class="ymaps-controls-righttop" style="z-index: 800;"><ymaps style="top: 5px; right: 5px; position: absolute;"><ymaps><ymaps class="ymaps-b-select ymaps-b-select_control_listbox"><ymaps class="ymaps-b-form-button ymaps-b-form-button_theme_grey-no-transparent-26 ymaps-b-form-button_height_26 ymaps-i-bem" role="button" unselectable="on" style="user-select: none;"><ymaps class="ymaps-b-form-button__left"></ymaps><ymaps class="ymaps-b-form-button__content"><ymaps class="ymaps-b-form-button__text"><ymaps id="id_149596283901887192_0" unselectable="on" style="user-select: none;"><ymaps><ymaps class="ymaps-b-select__title" style="display: block; width: 61px;">Схема</ymaps><ymaps class="ymaps-b-select__arrow" title="Развернуть"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-b-popupa ymaps-b-popupa_layout_yes ymaps-b-popupa_theme_white ymaps-i-bem"><ymaps class="ymaps-b-popupa__shadow"></ymaps><ymaps class="ymaps-b-popupa__body ymaps-b-popupa__body_theme_white"><ymaps class="ymaps-b-popupa__ie-gap">&nbsp;</ymaps><ymaps class="ymaps-b-listbox-panel"><ymaps><ymaps class="ymaps-group"><ymaps><ymaps></ymaps><ymaps><ymaps class="ymaps-b-listbox-panel__item ymaps-b-listbox-panel__item_state_current"><ymaps class="ymaps-b-listbox-panel__item-link" unselectable="on" style="user-select: none;">Схема</ymaps><ymaps class="ymaps-b-listbox-panel__item-flag"></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps></ymaps><ymaps><ymaps class="ymaps-b-listbox-panel__item "><ymaps class="ymaps-b-listbox-panel__item-link" unselectable="on" style="user-select: none;">Спутник</ymaps><ymaps class="ymaps-b-listbox-panel__item-flag"></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps></ymaps><ymaps><ymaps class="ymaps-b-listbox-panel__item "><ymaps class="ymaps-b-listbox-panel__item-link" unselectable="on" style="user-select: none;">Гибрид</ymaps><ymaps class="ymaps-b-listbox-panel__item-flag"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-controls-lefttop" style="z-index: 800;"><ymaps class="ymaps-b-zoom_hints-pos_right" style="top: 75px; left: 5px; position: absolute;"><ymaps><ymaps class="ymaps-b-zoom"><ymaps class="ymaps-b-zoom__button ymaps-b-zoom__button_type_minus" unselectable="on" style="user-select: none;"><ymaps class="ymaps-b-form-button ymaps-b-form-button_size_sm ymaps-b-form-button_theme_grey-sm ymaps-b-form-button_height_26 ymaps-i-bem" role="button"><ymaps class="ymaps-b-form-button__left"></ymaps><ymaps class="ymaps-b-form-button__content"><ymaps class="ymaps-b-form-button__text"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-b-zoom__scale" unselectable="on" style="height: 132.667px; user-select: none;"><ymaps class="ymaps-b-zoom__scale-bg"></ymaps><ymaps class="ymaps-b-zoom__mark" style="top: 73px;"><ymaps class="ymaps-b-zoom__mark-inner"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps><ymaps class="ymaps-b-hint-placeholder"><ymaps><ymaps><ymaps class="ymaps-b-zoom__hint" style="top: 17px;"><ymaps class="ymaps-b-zoom__hint-left"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-content"><ymaps class="ymaps-b-zoom__hint-text">мир</ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-right"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps><ymaps class="ymaps-b-zoom__hint" style="top: 38px;"><ymaps class="ymaps-b-zoom__hint-left"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-content"><ymaps class="ymaps-b-zoom__hint-text">страна</ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-right"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps><ymaps class="ymaps-b-zoom__hint" style="top: 66px;"><ymaps class="ymaps-b-zoom__hint-left"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-content"><ymaps class="ymaps-b-zoom__hint-text">город</ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-right"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps><ymaps class="ymaps-b-zoom__hint" style="top: 94px;"><ymaps class="ymaps-b-zoom__hint-left"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-content"><ymaps class="ymaps-b-zoom__hint-text">улица</ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-right"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps><ymaps><ymaps class="ymaps-b-zoom__hint" style="top: 115px;"><ymaps class="ymaps-b-zoom__hint-left"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-content"><ymaps class="ymaps-b-zoom__hint-text">дом</ymaps></ymaps><ymaps class="ymaps-b-zoom__hint-right"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-b-zoom__button ymaps-b-zoom__button_type_plus" unselectable="on" style="user-select: none;"><ymaps class="ymaps-b-form-button ymaps-b-form-button_size_sm ymaps-b-form-button_theme_grey-sm ymaps-b-form-button_height_26 ymaps-i-bem" role="button"><ymaps class="ymaps-b-form-button__left"></ymaps><ymaps class="ymaps-b-form-button__content"><ymaps class="ymaps-b-form-button__text"><ymaps class="ymaps-b-zoom__sprite"></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-controls-rightbottom" style="z-index: 800;"><ymaps style="bottom: 50px; right: 7px; position: absolute;"><ymaps><ymaps id="id_149596283901887192_1"><ymaps><ymaps class="ymaps-scaleline-control" style="width:78px"><ymaps class="ymaps-scaleline-label">6&nbsp;км</ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-overlay-stepwise-pane" style="z-index: 600; position: absolute; left: 843px; top: 225px;"><ymaps class="ymaps-point-overlay" unselectable="on" style="position: absolute; height: 0px; width: 0px; user-select: none; left: 0px; top: 0px; z-index: 650;"><ymaps><ymaps class="ymaps-image-with-content" style="position: absolute; left: -10px; top: -40px; width: 37px; height: 42px; background-position: 0px 0px; background-size: 37px 42px; background-image: url(&quot;https://api-maps.yandex.ru/2.0.45/release/../images/2c3d90d4e522c1f62b6cf3e59f7a877d.png&quot;);"><ymaps class="ymaps-image-with-content-content" style="font: 13px Arial,sans-serif;position: absolute;text-align: center;left: 6px;top: 6px;width: 16px;height: 16px;"><ymaps id="id_149596283901887192_2"><ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps></ymaps><ymaps class="ymaps-graphics-pane" style="z-index: 300; position: absolute; left: 843px; top: 225px;"><ymaps unselectable="on" style="user-select: none;"><ymaps class="graphics-canvas" style="top: 0px; left: 0px; transform: translateZ(0px); position: absolute; z-index: 650;"><ymaps><canvas width="205" height="205" style="position: absolute; width: 257px; height: 257px; left: -207px; top: -257px;"></canvas><canvas width="205" height="205" style="position: absolute; width: 257px; height: 257px; left: -207px; top: 0px;"></canvas><canvas width="205" height="205" style="position: absolute; width: 257px; height: 257px; left: 50px; top: -257px;"></canvas><canvas width="205" height="205" style="position: absolute; width: 257px; height: 257px; left: 50px; top: 0px;"></canvas></ymaps></ymaps></ymaps></ymaps></ymaps></div>	</div>
+</div>
+        </div>

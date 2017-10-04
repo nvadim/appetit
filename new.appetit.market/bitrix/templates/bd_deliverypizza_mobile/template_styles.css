@@ -1,0 +1,55 @@
+.gift-item.masked{
+	border-bottom: none;
+}
+
+.gift-item.masked .mask{
+	border-radius: 3px;
+}
+
+.gift-item.active{
+	border-radius: 3px;
+	border-bottom: none;
+}
+.gift-item.active::after {
+	top: 20px;
+	left: 18px;
+}
+
+.gifts-list .gift-item .gift-description .get-another-gift {
+	padding: 16px 20px;
+	margin-top: 22px;
+}
+
+.gifts-list .gift-item:last-child {
+	margin-bottom: 15px;
+}
+
+.basket .basket-item .section {
+	padding-bottom: 5px;
+}
+
+.accordion__item__body p,
+.accordion__item__body ul {
+	margin: 0 0 20px;
+}
+.accordion__item__body ul {
+	padding: 0 0 0 20px;
+	list-style: disc;
+}
+.accordion__item__body ul li {
+	margin: 5px 0;
+}
+
+ul.menu-bottom {
+
+}
+
+ul.menu-bottom li {
+	font-weight: 300;
+	margin: 5px 5px;
+	display: inline-block;
+}
+
+ul.menu-bottom li a {
+	color: #5c5d5f;
+}

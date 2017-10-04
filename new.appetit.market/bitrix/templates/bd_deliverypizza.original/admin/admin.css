@@ -1,0 +1,38 @@
+#global_menu_global_menu_bd_delivery .adm-main-menu-item-icon{
+    background: url(admin-icon.png) no-repeat 19px 10px !important;
+}
+#adm-workarea{
+	height:100%;
+	box-sizing:border-box;
+}
+#bd_admin_area{
+	position:relative;
+	overflow:hidden;
+	min-height:50px;
+}
+#bd_admin_area iframe{
+	border:medium none;
+	height:100%;
+	position:relative;
+	width:100%;
+	z-index:1;
+	box-sizing:border-box;
+}
+#bd_admin_area.bd-admin-ready iframe{
+	border:1px solid #cfd8d7;
+	background-color:white;
+}
+.bd-admin-loader{
+	background:rgba(0, 0, 0, 0) url("waiter.gif") no-repeat scroll 0 0 / 100% auto;
+	border:medium none;
+	content:" ";
+	display:block;
+	height:37px;
+	position:absolute;
+	width:35px;
+	top:0;
+	left:0;
+}
+.bd-admin-ready .bd-admin-loader{
+	display:none;
+}

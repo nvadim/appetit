@@ -1,0 +1,131 @@
+.khayr_main_comment {
+	position:relative;
+}
+.khayr_main_comment .clear {
+	clear: both;
+}
+.khayr_main_comment .pt10 {
+	padding-top: 10px;
+}
+.khayr_main_comment .w-45 {
+	width: 45%;
+}
+.khayr_main_comment .comments {
+	border-top: 0px solid #ececec;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+}
+.khayr_main_comment .comments .stock {
+	padding: 20px 0 0;
+	position: relative;
+}
+.khayr_main_comment .comments .stock .userInfo {
+	float: left;
+	color: #fff;
+	position: relative;
+}
+
+.khayr_main_comment .comments .stock .userInfo:after {
+	content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px;
+    bottom: -20px; /* Положение треугольника */
+    border: 10px solid transparent;
+    border-top: 10px solid #6db2cd;
+}
+
+.khayr_main_comment .comments .stock .userInfo span {
+	background: #6db2cd;
+	display: block;
+	padding: 10px 20px;
+	font-weight: 300;
+}
+.khayr_main_comment .comments .stock .userText {
+	clear: both;
+	margin: 0 0 15px;
+	padding: 15px 0 0;
+}
+.khayr_main_comment .comments .stock .userText img:not([alt=CAPTCHA]) {
+	float: left;
+	max-width: 50px;
+	max-height: 50px;
+	padding: 0 10px 10px 0;
+}
+.khayr_main_comment .comments .stock .userText a {
+	display: inline-block;
+	margin: 10px 0 0;
+}
+.khayr_main_comment .comments .stock .userText .action {
+	clear: both;
+}
+.khayr_main_comment .comments .stock .stock {
+	margin-left: 40px;
+}
+.khayr_main_comment .comments .stock .stock .stock {
+	margin-left: 80px;
+}
+.khayr_main_comment .form {
+	margin-top: 25px;
+}
+
+
+/*.khayr_main_comment .close {
+	float: right;
+	margin-right: 10px;
+	margin-top: 9px;
+	background:url('img/delete.gif') no-repeat 0 0;
+	width:16px;
+	height:16px;
+}*/
+.khayr_main_comment .form_for {
+	display:none;
+}
+.khayr_main_comment .comments .stock .userText .rating-vote span.rating-vote-result,
+.khayr_main_comment .comments .stock .userText .rating-vote a {
+	margin: 0;
+}
+.khayr_main_comment_suc_exp {
+	position: fixed;
+	width: 100%;
+	background: #adc900;
+	color: #FFF;
+	padding: 10px;
+	z-index: 2000;
+	text-align: center;
+	border-bottom: 1px solid #FFF;
+	cursor:pointer;
+	display:none;
+}
+.khayr_main_comment_err_exp {
+	display:none;
+	cursor:pointer;
+	position: fixed;
+	width: 100%;
+	background: #fe3446;
+	color: #FFF;
+	padding: 10px;
+	z-index: 2000;
+	text-align: center;
+	border-bottom: 1px solid #FFF;
+}
+
+
+
+
+.khayr_main_comment .bd-input,
+.khayr_main_comment .bd-input-margin {
+    margin-bottom: 12px;
+}
+
+.khayr_main_comment .captcha {
+	margin: 6px 0;
+}
+
+.khayr_main_comment .button {
+	margin-right: 20px;
+}
+
+.khayr_main_comment .small {
+	font-size: 12px;
+	font-weight: 300;
+}
